@@ -1,0 +1,4 @@
+<h1 (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()"  [ngClass]="textStatus ? 'text--active' : 'text--inactive'">Hello {{name}}!</h1>
+<div>{{count}}</div>
+<button (click)="decreaseCount()">-</button>
+<button (click)="increaseCount()">+</button>

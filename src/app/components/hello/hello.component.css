@@ -1,0 +1,7 @@
+.text--active {
+    color: darkblue;
+}
+
+.text--inactive {
+    color: lightblue;
+}
