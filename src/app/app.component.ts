@@ -12,12 +12,11 @@ import { MoneyComponentComponent } from './money-component/money-component.compo
 })
 export class AppComponent {
   title = 'wolf moon';
-  count = 1;
+  count = 0;
+  showMoneyBoard = false;
 
   childrenCountChanged($event: number): void {
     console.log("event:" + $event);
     this.count = $event;
   }
-
-  
 }

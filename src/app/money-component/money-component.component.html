@@ -1,1 +1,5 @@
-<p>Money <span>{{_money}}</span></p>
+<div [style]="{border: 'solid 2px green', padding: '10px'}">
+    <span>Child isVisible: <b>{{isVisible}}</b></span>
+    <p>Money <span>{{_money}}</span></p>
+    <button type="button" (click)="toggleVisible()">Toggle</button>
+</div>

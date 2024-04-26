@@ -1,4 +1,5 @@
 <h1>{{title}}</h1>
 <div>Parent count: {{count}}</div>
-<app-hello [count]="count" (countChanged)="childrenCountChanged($event)"></app-hello>
-<app-money-component></app-money-component>
+<span>Parent showMoneyBoard: <b>{{showMoneyBoard}}</b></span>
+<app-hello [count]="count" [title]="title" (countChanged)="childrenCountChanged($event)"></app-hello>
+<app-money-component [(isVisible)]="showMoneyBoard"></app-money-component>

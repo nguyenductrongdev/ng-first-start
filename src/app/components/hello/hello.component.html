@@ -1,4 +1,10 @@
-<h1 (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()"  [ngClass]="textStatus ? 'text--active' : 'text--inactive'">Hello {{name}}!</h1>
-<div>{{count}}</div>
-<button (click)="decreaseCount()">-</button>
-<button (click)="increaseCount()">+</button>
+
+<div [style]="{border: 'solid 2px darkblue', padding: '10px'}">
+    <h1 (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()"  [ngClass]="textStatus ? 'text--active' : 'text--inactive'">The {{name}}'s counter!</h1>
+    <div>{{count}}</div>
+    <div>
+        <button (click)="decreaseCount()">-</button>
+        <button (click)="increaseCount()">+</button>
+    </div>
+    <input type="text" placeholder="title..." />
+</div>

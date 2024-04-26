@@ -20,12 +20,10 @@ export class HelloComponent {
   constructor(private _moneyService: MoneyServiceService) {}
 
   onMouseEnter(): void {
-    console.log("mouse enter");
     this.textStatus = true;
   }
 
   onMouseLeave(): void {
-    console.log("mouse leave");
     this.textStatus = false;
   }
 
